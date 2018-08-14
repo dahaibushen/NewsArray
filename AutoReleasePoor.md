@@ -1,1 +1,9 @@
+1.使用objc_autoreleasePoolPush 跟 objc_autoreleasePoolPop 这两个函数都是对AutoreleasePoolPage的简单封装；
+ AutoreleasePool 由AutoreleasePoolPage以双向链表的形式组合而成
+ 一个AutoreleasePoolPage的空间被占满时，会新建一个AutoreleasePoolPage对象，连接链表，后来的autorelease对象在新的page加入
+
+
+1.使用objc_autoreleasePoolPush   objc_autoreleasePoolPop
+2. autoreleaseFast 
+3.依赖于由一个或多个的 AutoreleasePoolPage 对象作为节点，构成的双向链表这样的数据结构
 
